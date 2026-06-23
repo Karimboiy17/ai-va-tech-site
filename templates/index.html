@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}AI va Tech — O'zbek tilidagi texnologiya yangiliklari{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>🇺🇿 AI va Tech</h1>
+    <p>Sun'iy intellekt va texnologiya yangiliklari — O'zbek tilida</p>
+</div>
+
+<section class="articles">
+    <div class="grid">
+        {% for article in articles %}
+        <div class="card" onclick="window.location='/article/{{ article.id }}'">
+            {% if article.image %}
+            <img class="card-image" src="{{ article.image }}" alt="{{ article.title }}" loading="lazy">
+            {% else %}
+            <div class="card-no-image">🤖</div>
+            {% endif %}
+            <div class="card-body">
+                <div class="card-category">{{ article.category }}</div>
+                <h3 class="card-title"><a href="/article/{{ article.id }}">{{ article.title }}</a></h3>
+                <p class="card-excerpt">{{ article.excerpt }}</p>
+                <div class="card-meta">
+                    <span>{{ article.date }}</span>
+                    {% if article.author %}
+                    <span>·</span>
+                    <span>{{ article.author }}</span>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div style="grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--text-secondary);">
+            <p style="font-size:1.2rem;">Hozircha maqolalar yo'q</p>
+            <p>Tez orada yangilanishlar kutilmoqda</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

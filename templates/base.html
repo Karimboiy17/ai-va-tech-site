@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI va Tech — O'zbek tilidagi eng so'nggi texnologiya va sun'iy intellekt yangiliklari">
+    <title>{% block title %}AI va Tech{% endblock %}</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🤖</text></svg>">
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="/" class="nav-brand">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="32" rx="8" fill="var(--accent)"/>
+                    <text x="16" y="24" font-size="20" text-anchor="middle" fill="white" font-weight="bold">AI</text>
+                </svg>
+                <span><span class="brand-accent">AI</span> va Tech</span>
+            </a>
+            <button id="themeToggle" class="theme-toggle" aria-label="Tungi rejim">
+                <span class="theme-toggle-icons">
+                    <span>☀️</span>
+                    <span>🌙</span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <div class="footer">
+        <p>© 2026 <a href="https://t.me/AIvaTech" style="color:var(--accent);text-decoration:none;">AI va Tech</a> | O'zbek tilidagi texnologiya yangiliklari</p>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

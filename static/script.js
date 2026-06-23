@@ -16,31 +16,25 @@
   });
 })();
 
-// Sidebar toggle (mobile)
+// Sidebar toggle
 (function() {
   const hamburger = document.getElementById('hamburger');
   const sidebar = document.getElementById('sidebar');
   const overlay = document.getElementById('sidebarOverlay');
-
   if (!hamburger || !sidebar || !overlay) return;
 
-  function openSidebar() {
+  function open() {
     sidebar.classList.add('open');
     overlay.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
 
-  function closeSidebar() {
+  function close() {
     sidebar.classList.remove('open');
     overlay.classList.remove('open');
     document.body.style.overflow = '';
   }
 
-  hamburger.addEventListener('click', openSidebar);
-  overlay.addEventListener('click', closeSidebar);
-
-  // Close sidebar on nav link click (mobile)
-  document.querySelectorAll('.nav-item').forEach(link => {
-    link.addEventListener('click', closeSidebar);
-  });
+  hamburger.addEventListener('click', open);
+  overlay.addEventListener('click', close);
 })();

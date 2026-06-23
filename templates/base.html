@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="AI va Tech — O'zbek tilidagi eng so'nggi texnologiya va sun'iy intellekt yangiliklari">
-    <title>{% block title %}AI va Tech{% endblock %}</title>
+    <title>{% block title %}AI va Tech — O'zbek tilidagi texnologiya yangiliklari{% endblock %}</title>
     <link rel="stylesheet" href="/static/style.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🤖</text></svg>">
 </head>
@@ -35,7 +35,7 @@
                 </a>
             </nav>
             <div class="sidebar-footer">
-                <button id="themeToggle" class="theme-toggle" aria-label="Tungi rejim">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
                     <span class="theme-toggle-icons">
                         <span>☀️</span>
                         <span>🌙</span>
@@ -44,24 +44,24 @@
             </div>
         </aside>
 
-        <button class="hamburger" id="hamburger" aria-label="Menyu">
-            <span></span>
-            <span></span>
-            <span></span>
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
         </button>
 
+        <!-- Overlay -->
         <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
         <main class="main-content">
             {% block content %}{% endblock %}
         </main>
-    </div>
 
-    <footer class="footer">
-        <div class="footer-inner">
-            <p>&copy; 2026 AI va Tech | O'zbek tilidagi texnologiya yangiliklari</p>
-        </div>
-    </footer>
+        <footer class="footer">
+            <div class="footer-inner">
+                <p>&copy; 2026 AI va Tech | O'zbek tilidagi texnologiya yangiliklari</p>
+            </div>
+        </footer>
+    </div>
 
     <script src="/static/script.js"></script>
 </body>

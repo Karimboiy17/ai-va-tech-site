@@ -11,9 +11,9 @@
     <div class="grid">
         {% for article in articles %}
         <div class="card" onclick="window.location='/article/{{ article.id }}'">
-            {% if article.image %}
+            {% if article.image_url %}
             <div class="card-image">
-                <img src="{{ article.image }}" alt="{{ article.title }}">
+                <img src="{{ article.image_url }}" alt="{{ article.title }}">
             </div>
             {% else %}
             <div class="card-no-image">🤖</div>
@@ -21,12 +21,12 @@
             <div class="card-body">
                 <div class="card-category">{{ article.category }}</div>
                 <h3 class="card-title"><a href="/article/{{ article.id }}">{{ article.title }}</a></h3>
-                <p class="card-excerpt">{{ article.excerpt }}</p>
+                <p class="card-excerpt">{{ article.summary }}</p>
                 <div class="card-meta">
                     <span>{{ article.date[:10] }}</span>
-                    {% if article.source %}
+                    {% if article.source_name %}
                     <span>·</span>
-                    <span>{{ article.source }}</span>
+                    <span>{{ article.source_name }}</span>
                     {% endif %}
                 </div>
             </div>

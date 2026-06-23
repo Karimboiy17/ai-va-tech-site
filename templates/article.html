@@ -9,18 +9,16 @@
         <span class="card-category">{{ article.category }}</span>
         <span>·</span>
         <span>{{ article.date[:10] }}</span>
-        {% if article.source %}
+        {% if article.source_name %}
         <span>·</span>
-        <span>{{ article.source }}</span>
+        <span>{{ article.source_name }}</span>
         {% endif %}
     </div>
 
     <h1>{{ article.title }}</h1>
 
     <div class="article-body">
-        {% for paragraph in article.content %}
-        <p>{{ paragraph }}</p>
-        {% endfor %}
+        {{ article.content|safe }}
     </div>
 </div>
 {% endblock %}

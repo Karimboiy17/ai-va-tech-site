@@ -1,0 +1,11 @@
+{
+  "id": "anthropic-claude-tag-slack",
+  "title": "Anthropic Claude Tag'ni ishga tushirdi — AI endi Slack'da jamoa a'zosi sifatida",
+  "summary": "Anthropic Claude Tag'ni research preview rejimida taqdim etdi. Bu Slack ichida ishlaydigan \"doimiy AI\" bo'lib, @Claude orqali chaqirish mumkin.",
+  "content": "<p><strong>23-iyun, Reuters</strong> — Anthropic sun'iy intellekt sohasidagi yangi qadam sifatida Claude Tag'ni research preview rejimida ishga tushirdi. Bu funksiya Slack messenjeri ichida to'g'ridan-to'g'ri ishlaydigan AI yordamchisi bo'lib, foydalanuvchilar @Claude orqali uni chaqirishlari mumkin.</p><p>Claude Tag vaqt o'tishi bilan kontekstni saqlab qoladi va jamoa a'zolarining ish jarayonlarini eslab qoladi. Bu uni oddiy chat-botlardan farqli qiladi — u jamoaning bir qismiga aylanadi, topshiriqlarni bajaradi va avtomatlashtiradi.</p><p>Hozircha funksiya Claude Enterprise va Team mijozlari uchun research preview rejimida mavjud. Kelajakda boshqa platformalarga ham kengaytirilishi kutilmoqda.</p><p>Anthropic kompaniyasi bu bilan korporativ AI bozorida raqobatni kuchaytirmoqda, ayniqsa Microsoft va OpenAI bilan raqobat sharoitida.</p>",
+  "category": "texnologiya",
+  "image_url": "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=800",
+  "source_name": "Reuters",
+  "source_url": "https://www.reuters.com/technology/artificial-intelligence/",
+  "date": "2026-06-23"
+}

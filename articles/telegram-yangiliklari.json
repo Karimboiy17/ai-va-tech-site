@@ -1,18 +1,10 @@
 {
-  "title": "Telegram yangiliklari: Premium foydalanuvchilar uchun 10 ta yangi imkoniyat",
-  "category": "Messenger",
-  "excerpt": "Telegram eng so'nggi yangilanishida Premium obunachilar uchun 10 dan ortiq yangi funksiyalarni taqdim etdi. Jumladan, AI yordamida xabar yozish va ovozli xabarlarni matnga aylantirish.",
-  "date": "2026-06-22",
-  "source": "AI va Tech",
-  "content": [
-    "Telegram yangi versiyasida Premium foydalanuvchilar uchun ko'plab yangi imkoniyatlarni taqdim etdi. Bu yangilanish messenjer tarixidagi eng katta yangilanishlardan biri bo'ldi.",
-    "Yangi funksiyalar:",
-    "• AI yordamida xabar yozish — matnni avtomatik to'ldirish va taklif qilish",
-    "• Ovozli xabarlarni matnga aylantirish (Speech-to-Text)",
-    "• Yuqori sifatli video xabarlar (4K gacha)",
-    "• Kengaytirilgan guruh boshqaruvi — yangi admin huquqlari",
-    "• Maxsus stikerlar yaratish uchun AI generator",
-    "• Telegram Stars bilan to'lovlar — kontent yaratuvchilarni qo'llab-quvvatlash",
-    "Bu yangilanish Telegramning eng yirik raqobatchilari (WhatsApp, Signal) oldida o'z mavqeini mustahkamlashga qaratilgan."
-  ]
+  "id": "telegram-yangiliklari",
+  "title": "Telegram xususiyatlari: Messenger 2026 yilgi eng muhim yangilanishlari",
+  "summary": "Telegram messenjeri 2026 yilda bir qancha yangi xususiyatlarni taqdim etdi — Stories, kengaytirilgan AI, premium funksiyalar va yana ko'p narsalar.",
+  "content": "<p>Telegram messenjeri 2026 yilda o'z foydalanuvchilari uchun bir qator muhim yangilanishlarni taqdim etishda davom etmoqda. Eng so'nggi yangilanishlar orasida quyidagilar bor:</p><p><strong>Asosiy yangilanishlar:</strong></p><ul><li>Telegram Stories endi barcha foydalanuvchilar uchun ochiq</li><li>AI yordamida matn tahrirlash va tarjima qilish imkoniyati</li><li>Premium foydalanuvchilar uchun cheksiz yuklab olish tezligi</li><li>Yangi ovozli chat va guruh video qo'ng'iroq imkoniyatlari</li><li>Kengaytirilgan xavfsizlik va maxfiylik sozlamalari</li></ul><p>Telegram dunyo bo'ylab eng tez rivojlanayotgan messenjerlardan biri bo'lib qolmoqda. Platforma hozirda 1 milliarddan ortiq faol foydalanuvchiga ega. Dasturchilar yangi xususiyatlar ustida ishlashda davom etmoqdalar.</p>",
+  "category": "texnologiya",
+  "image_url": "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=800",
+  "source_name": "AI va Tech",
+  "date": "2026-06-22"
 }

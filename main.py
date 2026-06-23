@@ -1,14 +1,13 @@
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
-import json, os
+import json
 from pathlib import Path
 import jinja2
 
 app = FastAPI(title="AI va Tech")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-# Direct Jinja2 env
 jinja_env = jinja2.Environment(
     loader=jinja2.FileSystemLoader("templates"),
     autoescape=jinja2.select_autoescape()
@@ -33,8 +32,16 @@ def load_article(article_id: str):
         article["id"] = article_id
         return article
 
+def group_by_category(articles):
+    groups = {}
+    for a in articles:
+        cat = a.get("category", "Boshqa")
+        if cat not in groups:
+            groups[cat] = []
+        groups[cat].append(a)
+    return groups
+
 def render(template_name: str, **context):
-    """Render a Jinja2 template."""
     template = jinja_env.get_template(template_name)
     html = template.render(**context)
     return HTMLResponse(html)
@@ -42,11 +49,21 @@ def render(template_name: str, **context):
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request):
     articles = load_articles()
-    return render("index.html", request=request, articles=articles)
+    return render("index.html", request=request, articles=articles, active_page="home")
+
+@app.get("/category", response_class=HTMLResponse)
+async def category(request: Request):
+    articles = load_articles()
+    categories = group_by_category(articles)
+    return render("category.html", request=request, categories=categories, active_page="category")
+
+@app.get("/about", response_class=HTMLResponse)
+async def about(request: Request):
+    return render("about.html", request=request, active_page="about")
 
 @app.get("/article/{article_id}", response_class=HTMLResponse)
 async def article(request: Request, article_id: str):
     article_data = load_article(article_id)
     if not article_data:
         return HTMLResponse("<h1>Maqola topilmadi</h1>", status_code=404)
-    return render("article.html", request=request, article=article_data)
+    return render("article.html", request=request, article=article_data, active_page="home")

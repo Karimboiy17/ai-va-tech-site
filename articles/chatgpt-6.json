@@ -1,16 +1,17 @@
 {
   "title": "ChatGPT-6: OpenAI eng so'nggi modelini taqdim etdi",
   "category": "Sun'iy Intellekt",
-  "excerpt": "OpenAI yangi ChatGPT-6 modelini chiqardi. Undan oldingi versiyadan 10 barobar tezroq va aniqroq. Yangi xususiyatlar bilan tanishing.",
-  "content": [
-    "OpenAI kompaniyasi eng so'nggi ChatGPT-6 modelini rasman taqdim etdi. Bu model oldingi GPT-4 va GPT-5 dan sezilarli darajada farq qiladi.",
-    "ChatGPT-6 ning asosiy afzalliklari: birinchidan, u 10 barobar tezroq ishlaydi. Ikkinchidan, ko'p tilli qo'llab-quvvatlash yaxshilangan. O'zbek tilini ham yaxshiroq tushunadi.",
-    "Yangi model bir vaqtning o'zida matn, rasm, audio va videoni tahlil qila oladi. Bu uni oldingi versiyalardan tubdan farq qiladi.",
-    "OpenAI ma'lumotlariga ko'ra, ChatGPT-6 murakkab matematik masalalarni yechishda 40 foizga aniqroq natija ko'rsatgan. Dasturlash sohasida esa kod yozish sifati 35 foizga yaxshilangan.",
-    "Model hozirda ChatGPT Plus va Pro foydalanuvchilari uchun ochiq. Bepul foydalanuvchilar ham tez orada sinab ko'rish imkoniyatiga ega bo'lishadi."
-  ],
-  "tags": ["ChatGPT", "OpenAI", "Sun'iy Intellekt", "AI"],
+  "excerpt": "OpenAI yangi ChatGPT-6 modelini chiqardi. Undan oldingi versiyadan 10 barobar tezroq ishlaydi va ko'p tilli qo'llab-quvvatlashni yaxshilagan.",
   "date": "2026-06-23",
-  "read_time": 3,
-  "author": "AI va Tech"
+  "source": "AI va Tech",
+  "content": [
+    "OpenAI kompaniyasi o'zining eng so'nggi AI modeli ChatGPT-6 ni rasman taqdim etdi. Yangi model oldingi versiyalarga nisbatan sezilarli darajada tezroq va aniqroq ishlaydi.",
+    "ChatGPT-6 ning asosiy xususiyatlari:",
+    "• 10 barobar tezroq ishlash tezligi",
+    "• 50 dan ortiq tillarni yuqori sifatda qo'llab-quvvatlash",
+    "• Kengaytirilgan kontekst oynasi (1 million token)",
+    "• Real vaqt rejimida internetga ulanish imkoniyati",
+    "• Multimedia (matn, rasm, audio) bilan ishlash",
+    "Yangi model sun'iy intellekt sohasida katta qadam bo'lib, undan oldingi modellardan ancha ustun ekanligi ta'kidlanmoqda. ChatGPT-6 dan foydalanish uchun OpenAI platformasiga obuna bo'lish talab qilinadi."
+  ]
 }

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Kategoriyalar — AI va Tech{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Kategoriyalar</h1>
+</div>
+<div class="categories-list">
+    {% for category, articles in categories.items() %}
+    <div class="category-group">
+        <h2 class="category-title">{{ category }}</h2>
+        <div class="grid">
+            {% for article in articles %}
+            <div class="card card-small" onclick="window.location='/article/{{ article.id }}'">
+                <div class="card-no-image">🤖</div>
+                <div class="card-body">
+                    <h3 class="card-title"><a href="/article/{{ article.id }}">{{ article.title }}</a></h3>
+                    <p class="card-excerpt">{{ article.excerpt[:100] }}...</p>
+                    <div class="card-meta">
+                        <span>{{ article.date[:10] }}</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

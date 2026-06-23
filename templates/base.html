@@ -9,29 +9,59 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🤖</text></svg>">
 </head>
 <body>
-    <nav>
-        <div class="nav-inner">
-            <a href="/" class="nav-brand">
-                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="32" height="32" rx="8" fill="var(--accent)"/>
-                    <text x="16" y="24" font-size="20" text-anchor="middle" fill="white" font-weight="bold">AI</text>
-                </svg>
-                <span><span class="brand-accent">AI</span> va Tech</span>
-            </a>
-            <button id="themeToggle" class="theme-toggle" aria-label="Tungi rejim">
-                <span class="theme-toggle-icons">
-                    <span>☀️</span>
-                    <span>🌙</span>
-                </span>
-            </button>
-        </div>
-    </nav>
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="/" class="nav-brand">
+                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="8" fill="var(--accent)"/>
+                        <text x="16" y="24" font-size="20" text-anchor="middle" fill="white" font-weight="bold">AI</text>
+                    </svg>
+                    <span><span class="brand-accent">AI</span> va Tech</span>
+                </a>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="/" class="nav-item {% if active_page == 'home' %}active{% endif %}">
+                    <span class="nav-icon">🏠</span>
+                    <span>Bosh sahifa</span>
+                </a>
+                <a href="/category" class="nav-item {% if active_page == 'category' %}active{% endif %}">
+                    <span class="nav-icon">📂</span>
+                    <span>Kategoriyalar</span>
+                </a>
+                <a href="/about" class="nav-item {% if active_page == 'about' %}active{% endif %}">
+                    <span class="nav-icon">ℹ️</span>
+                    <span>Biz haqimizda</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="themeToggle" class="theme-toggle" aria-label="Tungi rejim">
+                    <span class="theme-toggle-icons">
+                        <span>☀️</span>
+                        <span>🌙</span>
+                    </span>
+                </button>
+            </div>
+        </aside>
 
-    {% block content %}{% endblock %}
+        <button class="hamburger" id="hamburger" aria-label="Menyu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-    <div class="footer">
-        <p>© 2026 <a href="https://t.me/AIvaTech" style="color:var(--accent);text-decoration:none;">AI va Tech</a> | O'zbek tilidagi texnologiya yangiliklari</p>
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <main class="main-content">
+            {% block content %}{% endblock %}
+        </main>
     </div>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 AI va Tech | O'zbek tilidagi texnologiya yangiliklari</p>
+        </div>
+    </footer>
 
     <script src="/static/script.js"></script>
 </body>
